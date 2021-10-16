@@ -1,0 +1,44 @@
+body {
+    width: 100%;
+}
+
+#nav-top {
+    /* background-color: #54add3; */
+    /* background-color: #32a7da; */
+    background-color: #32a7da;
+    /* position: fixed;
+    width: 100%;
+    z-index: 1; */
+}
+
+.jumbotron {
+    background-color: #a6d5df;
+    padding-top: 2rem;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    color: #0f1c25;
+}
+
+#desc {
+    text-align: center;
+}
+
+#projects {
+    background-color: #a6d5df;
+}
+
+.link-project {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: #2eaaff;
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+}
