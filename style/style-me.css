@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
 body {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #nav-top {
@@ -32,6 +37,10 @@ body {
 .link-project {
     text-decoration: none;
     color: black;
+}
+
+.link-project:hover {
+    color: #366577;
 }
 
 footer {
