@@ -43,6 +43,10 @@ body {
     color: #366577;
 }
 
+.using-tools {
+  font-size: 0.5em;
+}
+
 footer {
     background-color: #45B1E0;
 }
