@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* nav */
+nav {
+  background-color: #2f85e9;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav .container-sm .navbar-brand {
+  font-weight: bold;
+}
+
+nav .container-sm ul li a {
+  font-weight: 500;
+}
+
+/* end of nav */
+/* header */
+header {
+  margin-bottom: 0;
+}
+
+header .container-fluid {
+  background-color: #a6d5df;
+}
+
+header .container-fluid #my-cartoon {
+  width: 15rem;
+  border-radius: 50%;
+}
+
+header .container-fluid h1 {
+  font-size: 3.5rem;
+}
+
+header .container-fluid p {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+header .custom-shape-divider-top-1646039546 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+header .custom-shape-divider-top-1646039546 svg {
+  position: relative;
+  display: block;
+  width: calc(145% + 1.3px);
+  height: 150px;
+}
+
+header .custom-shape-divider-top-1646039546 .shape-fill {
+  fill: #A6D5DF;
+}
+
+/* end of header */
+#about-me-field {
+  text-align: center;
+  margin: 10% 0;
+}
+
+#about-me-field #desc-about-me {
+  width: 60%;
+}
+
+#projects-field .skew-c {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  left: 0px;
+  z-index: 0;
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(49%, #fff), color-stop(50%, #a6d5df));
+  background: linear-gradient(to left bottom, #fff 49%, #a6d5df 50%);
+}
+
+#projects-field article {
+  background-color: #a6d5df;
+}
+
+#projects-field article h2 {
+  margin-bottom: 0;
+}
+
+#projects-field article #project-cards {
+  width: 85%;
+}
+
+#projects-field article #project-cards a {
+  color: #000;
+  text-decoration: none;
+}
+
+#projects-field article #project-cards .card img {
+  border-bottom: #c7c2c2 solid 1px;
+}
+
+#projects-field .skew-cc {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  background: linear-gradient(to left bottom, #a6d5df 49%, #fff 50%), linear-gradient(-50deg, #ffffff 16px, #000 0);
+}
+
+@media (max-width: 756px) {
+  header .container-fluid h1 {
+    font-size: 2.5rem;
+  }
+  header .container-fluid p {
+    font-size: 1.3em;
+  }
+  #about-me-field #desc-about-me {
+    width: 85%;
+  }
+  #projects-field article #project-card {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+$navColor: #2f85e9;
+$mainColor: #a6d5df;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* nav */
+nav {
+    background-color: $navColor;
+    // this bottom isn't work
+    position: sticky;
+    top: 0;
+
+    .container-sm {
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        ul {
+            li {
+                a {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+/* end of nav */
+
+/* header */
+header {
+    margin-bottom: 0;
+
+    .container-fluid {
+        background-color: $mainColor;
+
+        #my-cartoon {
+            width: 15rem;
+            border-radius: 50%;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 0;
+        }
+    }
+
+    .custom-shape-divider-top-1646039546 {
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .custom-shape-divider-top-1646039546 svg {
+        position: relative;
+        display: block;
+        width: calc(145% + 1.3px);
+        height: 150px;
+    }
+
+    .custom-shape-divider-top-1646039546 .shape-fill {
+        fill: #A6D5DF;
+    }
+}
+
+/* end of header */
+
+// about me
+#about-me-field {
+    text-align: center;
+    margin: 10% 0;
+
+    #desc-about-me {
+        width: 60%;
+    }
+}
+
+// end of about me
+
+// projects
+#projects-field {
+    .skew-c {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        left: 0px;
+        z-index: 0;
+        background: linear-gradient(to left bottom, #fff 49%, $mainColor 50%);
+    }
+
+    article {
+        background-color: $mainColor;
+
+        h2 {
+            margin-bottom: 0;
+        }
+
+        #project-cards {
+            width: 85%;
+
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+
+            .card {
+                img {
+                    border-bottom: rgb(199, 194, 194) solid 1px;
+                }
+            }
+        }
+    }
+
+    .skew-cc {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        left: 0px;
+        background: linear-gradient(to left bottom, $mainColor 49%, #fff 50%), linear-gradient(-50deg, #ffffff 16px, #000 0);
+    }
+}
+
+// end of projects
+
+@media (max-width: 756px) {
+    header {
+        .container-fluid {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.3em;
+            }
+        }
+    }
+
+    #about-me-field {
+        #desc-about-me {
+            width: 85%;
+        }
+    }
+
+    #projects-field {
+        article {
+            #project-card {
+                width: 100%;
+            }
+        }
+    }
+
+}
