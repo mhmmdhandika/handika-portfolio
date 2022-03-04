@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,9 +15,10 @@ body {
 /* nav */
 nav {
   background-color: #2f85e9;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 111;
 }
 
 nav .container-sm .navbar-brand {
@@ -84,8 +86,8 @@ header .custom-shape-divider-top-1646039546 .shape-fill {
   position: relative;
   left: 0px;
   z-index: 0;
-  background: -webkit-gradient(linear, right top, left bottom, color-stop(49%, #fff), color-stop(50%, #a6d5df));
-  background: linear-gradient(to left bottom, #fff 49%, #a6d5df 50%);
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(49%, rgba(255, 255, 255, 0)), color-stop(50%, #a6d5df));
+  background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 49%, #a6d5df 50%);
 }
 
 #projects-field article {
@@ -112,9 +114,37 @@ header .custom-shape-divider-top-1646039546 .shape-fill {
 #projects-field .skew-cc {
   width: 100%;
   height: 100px;
-  position: absolute;
+  position: relative;
   left: 0px;
-  background: linear-gradient(to left bottom, #a6d5df 49%, #fff 50%), linear-gradient(-50deg, #ffffff 16px, #000 0);
+  background: linear-gradient(to left bottom, #a6d5df 49%, rgba(255, 255, 255, 0) 50%), linear-gradient(-50deg, #ffffff00 16px, rgba(0, 0, 0, 0) 0);
+}
+
+#contact-me-field article #form-field {
+  width: 50% !important;
+}
+
+footer {
+  background-color: #2f85e9;
+  font-family: "Shippori Antique B1", sans-serif;
+}
+
+footer article {
+  width: 50% !important;
+  color: white;
+}
+
+footer article h3 {
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+footer article #socmed-logo-img a img {
+  width: 2rem;
+  margin: 0 0.11rem;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
 }
 
 @media (max-width: 756px) {
@@ -129,6 +159,15 @@ header .custom-shape-divider-top-1646039546 .shape-fill {
   }
   #projects-field article #project-card {
     width: 100%;
+  }
+  #contact-me-field article #form-field {
+    width: 90% !important;
+  }
+  footer article {
+    width: 90% !important;
+  }
+  footer article h3 {
+    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
 
 $navColor: #2f85e9;
 $mainColor: #a6d5df;
+$quoteFont: 'Shippori Antique B1';
 
 * {
     box-sizing: border-box;
@@ -17,9 +19,9 @@ body {
 /* nav */
 nav {
     background-color: $navColor;
-    // this bottom isn't work
-    position: sticky;
-    top: 0;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 111;
 
     .container-sm {
         .navbar-brand {
@@ -100,7 +102,7 @@ header {
         position: relative;
         left: 0px;
         z-index: 0;
-        background: linear-gradient(to left bottom, #fff 49%, $mainColor 50%);
+        background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 49%, $mainColor 50%);
     }
 
     article {
@@ -129,13 +131,65 @@ header {
     .skew-cc {
         width: 100%;
         height: 100px;
-        position: absolute;
+        position: relative;
         left: 0px;
-        background: linear-gradient(to left bottom, $mainColor 49%, #fff 50%), linear-gradient(-50deg, #ffffff 16px, #000 0);
+        background: linear-gradient(to left bottom, $mainColor 49%, rgba(255, 255, 255, 0) 50%), linear-gradient(-50deg, #ffffff00 16px, rgba(0, 0, 0, 0) 0);
     }
 }
 
 // end of projects
+
+// contact me
+#contact-me-field {
+
+    article {
+        #form-field {
+            width: 50% !important;
+        }
+    }
+}
+
+// end of contact me
+
+// footer
+footer {
+    background-color: #2f85e9;
+    font-family: $quoteFont, sans-serif;
+
+    article {
+        width: 50% !important;
+        color: white;
+
+        h3 {
+            font-size: 1.3em;
+            font-style: italic;
+        }
+
+        #socmed-logo-img {
+            a {
+                img {
+                    width: 2rem;
+                    margin: 0 0.11rem;
+                }
+            }
+        }
+    }
+}
+
+// effect element
+nav {
+    ul {
+        li {
+            a:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// end of effect element
+
+// end of footer
 
 @media (max-width: 756px) {
     header {
@@ -160,6 +214,25 @@ header {
         article {
             #project-card {
                 width: 100%;
+            }
+        }
+    }
+
+    #contact-me-field {
+
+        article {
+            #form-field {
+                width: 90% !important;
+            }
+        }
+    }
+
+    footer {
+        article {
+            width: 90% !important;
+
+            h3 {
+                font-size: 1.1rem;
             }
         }
     }
