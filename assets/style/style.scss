@@ -187,6 +187,38 @@ nav {
     }
 }
 
+header {
+    img:hover {
+        animation: swing-object 2.5s infinite alternate-reverse;
+    }
+}
+
+footer {
+    img:hover {
+        animation: rotate-object 1s alternate infinite;
+    }
+}
+
+@keyframes swing-object {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes rotate-object {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 // end of effect element
 
 // end of footer
