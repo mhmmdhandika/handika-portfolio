@@ -7,7 +7,7 @@ const alertMessage = document.querySelector('.alert-message')
 form.addEventListener('submit', e => {
     e.preventDefault()
     // when submit's button is clicked
-    // show laoding button, disappear send button
+    // show laoding button, remove send button
     loadingButton.classList.toggle('d-none')
     sendButton.classList.toggle('d-none')
 
@@ -16,7 +16,7 @@ form.addEventListener('submit', e => {
             body: new FormData(form)
         })
         .then(response => {
-            // show send button, disappear loading button
+            // show send button, remove loading button
             loadingButton.classList.toggle('d-none')
             sendButton.classList.toggle('d-none')
 
