@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap");
-
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -10,22 +8,19 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 /* nav */
 nav {
   background-color: #2f85e9;
-  position: -webkit-sticky !important;
   position: sticky !important;
   top: 0 !important;
   z-index: 111;
 }
-
 nav .container-sm .navbar-brand {
   font-weight: bold;
 }
-
 nav .container-sm ul li a {
   font-weight: 500;
 }
@@ -35,38 +30,31 @@ nav .container-sm ul li a {
 header {
   margin-bottom: 0;
 }
-
 header .container-fluid {
   background-color: #a6d5df;
 }
-
 header .container-fluid #my-cartoon {
   width: 15rem;
   border-radius: 50%;
 }
-
 header .container-fluid h1 {
   font-size: 3.5rem;
 }
-
 header .container-fluid p {
   font-size: 1.5em;
   margin-bottom: 0;
 }
-
 header .custom-shape-divider-top-1646039546 {
   width: 100%;
   overflow: hidden;
   line-height: 0;
 }
-
 header .custom-shape-divider-top-1646039546 svg {
   position: relative;
   display: block;
   width: calc(145% + 1.3px);
   height: 150px;
 }
-
 header .custom-shape-divider-top-1646039546 .shape-fill {
   fill: #A6D5DF;
 }
@@ -76,7 +64,6 @@ header .custom-shape-divider-top-1646039546 .shape-fill {
   text-align: center;
   margin: 10% 0;
 }
-
 #about-me-field #desc-about-me {
   width: 60%;
 }
@@ -87,31 +74,24 @@ header .custom-shape-divider-top-1646039546 .shape-fill {
   position: relative;
   left: 0px;
   z-index: 0;
-  background: -webkit-gradient(linear, right top, left bottom, color-stop(49%, rgba(255, 255, 255, 0)), color-stop(50%, #a6d5df));
   background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 49%, #a6d5df 50%);
 }
-
 #projects-field article {
   background-color: #a6d5df;
 }
-
 #projects-field article h2 {
   margin-bottom: 0;
 }
-
 #projects-field article #project-cards {
   width: 85%;
 }
-
 #projects-field article #project-cards a {
   color: #000;
   text-decoration: none;
 }
-
 #projects-field article #project-cards .card img {
   border-bottom: #c7c2c2 solid 1px;
 }
-
 #projects-field .skew-cc {
   width: 100%;
   height: 100px;
@@ -128,17 +108,14 @@ footer {
   background-color: #2f85e9;
   font-family: "Shippori Antique B1", sans-serif;
 }
-
 footer article {
   width: 50% !important;
   color: white;
 }
-
 footer article h3 {
   font-size: 1.3em;
   font-style: italic;
 }
-
 footer article #socmed-logo-img a img {
   width: 2rem;
   margin: 0 0.11rem;
@@ -153,63 +130,29 @@ header img:hover {
 }
 
 footer img:hover {
-  -webkit-animation: rotate-object 1s alternate infinite;
   animation: rotate-object 1s alternate infinite;
-}
-
-@-webkit-keyframes swing-object {
-  0% {
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-  }
 }
 
 @keyframes swing-object {
   0% {
-    -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
   }
-
   100% {
-    -webkit-transform: rotate(-30deg);
     transform: rotate(-30deg);
   }
 }
-
-@-webkit-keyframes rotate-object {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes rotate-object {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 @media (max-width: 756px) {
   header .container-fluid h1 {
     font-size: 2.5rem;
   }
-
   header .container-fluid p {
     font-size: 1.3em;
   }
@@ -229,7 +172,6 @@ footer img:hover {
   footer article {
     width: 90% !important;
   }
-
   footer article h3 {
     font-size: 1.1rem;
   }
