@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap");
+
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -153,50 +154,54 @@ header img:hover {
 
 footer img:hover {
   -webkit-animation: rotate-object 1s alternate infinite;
-          animation: rotate-object 1s alternate infinite;
+  animation: rotate-object 1s alternate infinite;
 }
 
 @-webkit-keyframes swing-object {
   0% {
     -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
+    transform: rotate(30deg);
   }
+
   100% {
     -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
+    transform: rotate(-30deg);
   }
 }
 
 @keyframes swing-object {
   0% {
     -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
+    transform: rotate(30deg);
   }
+
   100% {
     -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
+    transform: rotate(-30deg);
   }
 }
 
 @-webkit-keyframes rotate-object {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes rotate-object {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -204,23 +209,30 @@ footer img:hover {
   header .container-fluid h1 {
     font-size: 2.5rem;
   }
+
   header .container-fluid p {
     font-size: 1.3em;
   }
+
   #about-me-field #desc-about-me {
     width: 85%;
   }
+
   #projects-field article #project-card {
     width: 100%;
   }
+
   #contact-me-field article #form-field {
     width: 90% !important;
   }
+
   footer article {
     width: 90% !important;
   }
+
   footer article h3 {
     font-size: 1.1rem;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

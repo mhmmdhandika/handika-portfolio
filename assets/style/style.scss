@@ -6,135 +6,135 @@ $mainColor: #a6d5df;
 $quoteFont: 'Shippori Antique B1';
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* nav */
 nav {
-    background-color: $navColor;
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 111;
+  background-color: $navColor;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 111;
 
-    .container-sm {
-        .navbar-brand {
-            font-weight: bold;
-        }
-
-        ul {
-            li {
-                a {
-                    font-weight: 500;
-                }
-            }
-        }
+  .container-sm {
+    .navbar-brand {
+      font-weight: bold;
     }
+
+    ul {
+      li {
+        a {
+          font-weight: 500;
+        }
+      }
+    }
+  }
 }
 
 /* end of nav */
 
 /* header */
 header {
-    margin-bottom: 0;
+  margin-bottom: 0;
 
-    .container-fluid {
-        background-color: $mainColor;
+  .container-fluid {
+    background-color: $mainColor;
 
-        #my-cartoon {
-            width: 15rem;
-            border-radius: 50%;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-        }
-
-        p {
-            font-size: 1.5em;
-            margin-bottom: 0;
-        }
+    #my-cartoon {
+      width: 15rem;
+      border-radius: 50%;
     }
 
-    .custom-shape-divider-top-1646039546 {
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
+    h1 {
+      font-size: 3.5rem;
     }
 
-    .custom-shape-divider-top-1646039546 svg {
-        position: relative;
-        display: block;
-        width: calc(145% + 1.3px);
-        height: 150px;
+    p {
+      font-size: 1.5em;
+      margin-bottom: 0;
     }
+  }
 
-    .custom-shape-divider-top-1646039546 .shape-fill {
-        fill: #A6D5DF;
-    }
+  .custom-shape-divider-top-1646039546 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-top-1646039546 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 150px;
+  }
+
+  .custom-shape-divider-top-1646039546 .shape-fill {
+    fill: #A6D5DF;
+  }
 }
 
 /* end of header */
 
 // about me
 #about-me-field {
-    text-align: center;
-    margin: 10% 0;
+  text-align: center;
+  margin: 10% 0;
 
-    #desc-about-me {
-        width: 60%;
-    }
+  #desc-about-me {
+    width: 60%;
+  }
 }
 
 // end of about me
 
 // projects
 #projects-field {
-    .skew-c {
-        width: 100%;
-        height: 100px;
-        position: relative;
-        left: 0px;
-        z-index: 0;
-        background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 49%, $mainColor 50%);
+  .skew-c {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    left: 0px;
+    z-index: 0;
+    background: linear-gradient(to left bottom, rgba(255, 255, 255, 0) 49%, $mainColor 50%);
+  }
+
+  article {
+    background-color: $mainColor;
+
+    h2 {
+      margin-bottom: 0;
     }
 
-    article {
-        background-color: $mainColor;
+    #project-cards {
+      width: 85%;
 
-        h2 {
-            margin-bottom: 0;
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .card {
+        img {
+          border-bottom: rgb(199, 194, 194) solid 1px;
         }
-
-        #project-cards {
-            width: 85%;
-
-            a {
-                color: #000;
-                text-decoration: none;
-            }
-
-            .card {
-                img {
-                    border-bottom: rgb(199, 194, 194) solid 1px;
-                }
-            }
-        }
+      }
     }
+  }
 
-    .skew-cc {
-        width: 100%;
-        height: 100px;
-        position: relative;
-        left: 0px;
-        background: linear-gradient(to left bottom, $mainColor 49%, rgba(255, 255, 255, 0) 50%), linear-gradient(-50deg, #ffffff00 16px, rgba(0, 0, 0, 0) 0);
-    }
+  .skew-cc {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    left: 0px;
+    background: linear-gradient(to left bottom, $mainColor 49%, rgba(255, 255, 255, 0) 50%), linear-gradient(-50deg, #ffffff00 16px, rgba(0, 0, 0, 0) 0);
+  }
 }
 
 // end of projects
@@ -142,81 +142,81 @@ header {
 // contact me
 #contact-me-field {
 
-    article {
-        #form-field {
-            width: 50% !important;
-        }
+  article {
+    #form-field {
+      width: 50% !important;
     }
+  }
 }
 
 // end of contact me
 
 // footer
 footer {
-    background-color: #2f85e9;
-    font-family: $quoteFont, sans-serif;
+  background-color: #2f85e9;
+  font-family: $quoteFont, sans-serif;
 
-    article {
-        width: 50% !important;
-        color: white;
+  article {
+    width: 50% !important;
+    color: white;
 
-        h3 {
-            font-size: 1.3em;
-            font-style: italic;
-        }
-
-        #socmed-logo-img {
-            a {
-                img {
-                    width: 2rem;
-                    margin: 0 0.11rem;
-                }
-            }
-        }
+    h3 {
+      font-size: 1.3em;
+      font-style: italic;
     }
+
+    #socmed-logo-img {
+      a {
+        img {
+          width: 2rem;
+          margin: 0 0.11rem;
+        }
+      }
+    }
+  }
 }
 
 // effect element
 nav {
-    ul {
-        li {
-            a:hover {
-                font-weight: bold;
-            }
-        }
+  ul {
+    li {
+      a:hover {
+        font-weight: bold;
+      }
     }
+  }
 }
 
 header {
-    img:hover {
-        animation: swing-object 2.5s infinite alternate-reverse;
-    }
+  img:hover {
+    animation: swing-object 2.5s infinite alternate-reverse;
+  }
 }
 
 footer {
-    img:hover {
-        animation: rotate-object 1s alternate infinite;
-    }
+  img:hover {
+    animation: rotate-object 1s alternate infinite;
+  }
 }
 
 @keyframes swing-object {
-    0% {
-        transform: rotate(30deg);
-    }
+  0% {
+    transform: rotate(30deg);
+  }
 
-    100% {
-        transform: rotate(-30deg);
-    }
+  100% {
+    transform: rotate(-30deg);
+  }
 }
 
 @keyframes rotate-object {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 // end of effect element
@@ -224,49 +224,49 @@ footer {
 // end of footer
 
 @media (max-width: 756px) {
-    header {
-        .container-fluid {
-            h1 {
-                font-size: 2.5rem;
-            }
+  header {
+    .container-fluid {
+      h1 {
+        font-size: 2.5rem;
+      }
 
-            p {
-                font-size: 1.3em;
-            }
-        }
+      p {
+        font-size: 1.3em;
+      }
     }
+  }
 
-    #about-me-field {
-        #desc-about-me {
-            width: 85%;
-        }
+  #about-me-field {
+    #desc-about-me {
+      width: 85%;
     }
+  }
 
-    #projects-field {
-        article {
-            #project-card {
-                width: 100%;
-            }
-        }
+  #projects-field {
+    article {
+      #project-card {
+        width: 100%;
+      }
     }
+  }
 
-    #contact-me-field {
+  #contact-me-field {
 
-        article {
-            #form-field {
-                width: 90% !important;
-            }
-        }
+    article {
+      #form-field {
+        width: 90% !important;
+      }
     }
+  }
 
-    footer {
-        article {
-            width: 90% !important;
+  footer {
+    article {
+      width: 90% !important;
 
-            h3 {
-                font-size: 1.1rem;
-            }
-        }
+      h3 {
+        font-size: 1.1rem;
+      }
     }
+  }
 
 }
